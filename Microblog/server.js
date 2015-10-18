@@ -1,3 +1,5 @@
+//Server side JS
+
 var mongoose = require('mongoose');
 var express = require('express');
 var app = express();
@@ -15,6 +17,8 @@ app.use("/static", express.static("public"));
 app.get('/', function(request, response) {
 	response.render('index');
 });
+
+
 
 app.get('/', function(request, response) {
 	response.render('styles');
