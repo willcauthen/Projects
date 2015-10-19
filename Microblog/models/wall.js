@@ -1,11 +1,10 @@
 var mongoose = require('mongoose');
 
-var schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
-var WallSchema = new schema ({
-	color: String,
+var WallSchema = new Schema ({
 	post: String
 });
 
-var Wall = mongoose.model ('Wall', WallSchema);
-module.exports = Wall;
+var Post = mongoose.model('Post', WallSchema);
+module.exports = Post;
